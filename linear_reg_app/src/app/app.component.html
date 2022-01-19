@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-sm">
+      <h1>Linear Regression Model</h1>
+      
+      <h4>Predicted Value: <span class="badge badge-info">{{ prediction }}</span></h4>
+
+      <p>Basic TensorFlow linear regression model that was trained in the browser.</p>
+      
+      <hr>
+      
+      <input type="number" [(ngModel)]="val" class="form-control" placeholder="enter any random numbner">
+      <button type="button" class="btn btn-info submit-btn" (click)="linearPrediction()">Predict</button>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
